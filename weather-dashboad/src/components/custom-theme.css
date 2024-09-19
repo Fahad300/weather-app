@@ -1,0 +1,54 @@
+.theme-light {
+    color: #212529;
+}
+
+.theme-light::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: url('https://images.pexels.com/photos/789152/pexels-photo-789152.jpeg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.theme-dark {
+    color: #f8f9fa;
+}
+
+.theme-dark::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: url('https://images.pexels.com/photos/355465/pexels-photo-355465.jpeg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.theme-dark .list-group-item {
+    background-color: transparent;
+    border-color: #ffffff;
+    color: var(--card-text);
+}
+
+.theme-dark .list-group-item a {
+    color: #f8f9fa;
+}
+
+.theme-light .list-group-item {
+    background-color: transparent;
+    border-color: #454d55;
+}
+
+.theme-light .list-group-item a {
+    color: #212529;
+}

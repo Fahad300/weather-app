@@ -1,0 +1,25 @@
+/* Add all the @keyframes animations here from the SVG files */
+@keyframes am-weather-cloud-1 {
+    0% {
+        transform: translate(-5px, 0px);
+    }
+
+    50% {
+        transform: translate(10px, 0px);
+    }
+
+    100% {
+        transform: translate(-5px, 0px);
+    }
+}
+
+/* Add more animations as needed */
+
+.am-weather-cloud-1 {
+    animation-name: am-weather-cloud-1;
+    animation-duration: 7s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+/* Add more animation classes as needed */

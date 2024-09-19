@@ -1,0 +1,40 @@
+/* Light theme */
+.theme-light {
+    --bg-color: #f0f0f0;
+    --text-color: #333;
+    --card-bg: rgba(255, 255, 255, 0.2);
+    --card-text: #333;
+    --btn-primary-bg: #007bff;
+    --btn-primary-text: #fff;
+}
+
+/* Dark theme */
+.theme-dark {
+    --bg-color: #333;
+    --text-color: #f0f0f0;
+    --card-bg: rgba(0, 0, 0, 0.2);
+    --card-text: #f0f0f0;
+    --btn-primary-bg: #0056b3;
+    --btn-primary-text: #fff;
+}
+
+/* Apply theme to body */
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Apply theme to cards */
+.card {
+    background-color: var(--card-bg);
+    color: var(--card-text);
+}
+
+/* Apply theme to buttons */
+.btn-primary {
+    background-color: var(--btn-primary-bg);
+    color: var(--btn-primary-text);
+}
+
+/* Add more global theme styles as needed */

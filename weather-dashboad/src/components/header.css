@@ -1,0 +1,79 @@
+a.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.theme-dark a:hover {
+    color: #fff;
+}
+
+.theme-light a:hover {
+    color: #000;
+}
+
+
+a.navbar-brand::after {
+    content: '☀';
+    font-size: 1.2rem;
+    margin-left: 5px;
+    animation: rotate 2s ease-in-out infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+.time-date-container {
+    text-align: right;
+    line-height: 1.2;
+}
+
+.time {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.date {
+    font-size: 0.8rem;
+    color: #666;
+}
+
+.theme-info {
+    display: flex;
+    align-items: center;
+}
+
+.theme-icon {
+    font-size: 1.2rem;
+    margin-right: 0.5rem;
+}
+
+footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    background: var(--card-bg);
+    color: var(--card-text);
+}

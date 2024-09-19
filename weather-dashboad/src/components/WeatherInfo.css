@@ -1,0 +1,114 @@
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes fade {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+}
+
+.animated-icon {
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.fa-sun {
+    animation-name: spin;
+}
+
+.fa-cloud {
+    animation-name: bounce;
+}
+
+.fa-cloud-rain,
+.fa-snowflake {
+    animation-name: bounce;
+}
+
+.fa-wind {
+    animation-name: fade;
+}
+
+.fa-bolt {
+    animation-name: fade;
+    animation-duration: 0.5s;
+}
+
+.weather-info {
+    position: relative;
+    /* ... existing styles ... */
+}
+
+.weather-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
+}
+
+.weather-icons svg {
+    width: 32px;
+    height: 32px;
+    color: #333
+}
+
+.favorite-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+button.favorite-button svg {
+    color: #ffa500;
+}
+
+.theme-light input.form-control {
+    background-color: transparent;
+    border-color: #333;
+    color: #333;
+}
+
+.theme-dark input.form-control {
+    background-color: transparent;
+    border-color: #fff;
+    color: #fff;
+}
+
+.theme-light .input-group .btn {
+    background-color: #333;
+    border-color: #333;
+    color: #fff;
+}
+
+.theme-dark .input-group .btn {
+    background-color: #fff;
+    border-color: #fff;
+    color: #333;
+}
